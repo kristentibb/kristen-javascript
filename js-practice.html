@@ -61,6 +61,54 @@
     let greeting = "My name is " + name;
     console.log(greeting);
 
+    console.log("Using functions"); 
+
+    // function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    let try01 = makeSquare(3);
+    console.log(try01);
+
+    let try02 = makeSquare(19);
+    console.log(try02);
+
+    let try03 = makeSquare(777);
+    console.log(try03);
+
+    // functions on my own
+    function makeName(firstName, middleName, lastName) {
+      let name = (firstName + " " + middleName + " " + lastName);
+      return name;
+    }
+
+    let kristen = makeName("Kristen", "Laine", "Tibbetts");
+    console.log(kristen);
+
+    let beto = makeName('Robert', '"Beto"', 'O\'Rourke');
+    console.log(beto);
+
+    let andrew = makeName("Andrew", "Stephen", "Lathem");
+    console.log(andrew);
+
+    // min and max dating age (for fun)
+    function ageMax(yourAge) {
+      let maxDateAge = (yourAge - 7) * 2;
+      return maxDateAge;
+    }
+    function ageMin(yourAge) {
+      let minDateAge = (yourAge / 2) + 7;
+      return minDateAge;
+    }
+
+    let max = ageMax(21);
+    console.log(max);
+
+    let min = ageMin(21);
+    console.log(min);
+
   </script>
 </body>
 </html>
